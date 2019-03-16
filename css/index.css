@@ -1,0 +1,325 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.7;
+	word-wrap: break-word;
+	color: #222;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.index-header {
+	width: 100%;
+	height: 45px;
+	background-color: #3d444c;
+	position: fixed;
+}
+
+.index-wrap {
+	width: 50%;
+	height: 45px;
+	margin: 0 auto;
+}
+
+.index-logo {
+	width: 35px;
+	height: 45px;
+	float: left;
+	background-image: url(../img/记事本.png);
+	background-repeat: no-repeat;
+	margin-top: 2px;
+}
+
+.index-search {
+	position: relative;
+	float: left;
+	margin: 7px 0 0 12px;
+}
+
+.search-form {
+	position: relative;
+	width: 367px;
+}
+
+.search-box:focus {
+	padding: 7px 50px 7px 10px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 17px;
+	background-color: white;
+	border: 1px solid #045bb2;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, .1);
+	box-sizing: border-box;
+	outline: 0;
+	transition: all .2s ease-in-out;
+}
+
+.search-box {
+	padding: 7px 50px 7px 10px;
+	width: 100%;
+	font-size: 14px;
+	line-height: 17px;
+	background-color: #e1eaf2;
+	border: 1px solid #045bb2;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2), 0 1px 0 rgba(255, 255, 255, .1);
+	box-sizing: border-box;
+	outline: 0;
+	transition: all .2s ease-in-out;
+}
+
+.search-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 100%;
+	background: linear-gradient(to bottom, #00BC9B, #00BC9B);
+	border: 1px solid #3d444c;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05), inset 0 1px 1px rgba(255, 255, 255, .15);
+	box-sizing: border-box;
+	outline: 0;
+	cursor: pointer;
+}
+
+.search-img {
+	background-image: url(../img/放大镜.png);
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+}
+
+.index-nav {
+	float: left;
+	position: relative;
+}
+
+.index-nav ul {
+	margin: 0 0 0 18px;
+	list-style-type: none;
+}
+
+.nav-mainpage {
+	background: #31363d;
+}
+
+.nav-li {
+	position: relative;
+	float: left;
+	margin: 0;
+	list-style: none;
+}
+
+.nav-link {
+	width: 54px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	display: block;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .12);
+	font-size: 14px;
+	color: gray;
+}
+
+.nav-link:hover {
+	color: white;
+}
+
+.nav-mainpage a {
+	color: #eee;
+}
+
+.index-user {
+	float: right;
+	position: relative;
+	min-width: 120px;
+	margin-left: 15px;
+	z-index: 10;
+}
+
+.user-info {
+	position: relative;
+	height: 45px;
+	line-height: 45px;
+	text-indent: 46px;
+	color: #888;
+	text-decoration: none;
+	border-top: 0;
+	background: transparent;
+	box-shadow: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.index-user a {
+	display: block;
+	width: 120px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .12);
+	font-size: 14px;
+}
+
+.index-user ul li a:hover {
+	color: white;
+}
+
+.index-user:hover {
+	background-color: #31363d;
+}
+
+.user-portrait {
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	border: 1px solid rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+	background-color: transparent;
+	height: 25px;
+	width: 25px;
+	border-radius: 3px;
+}
+
+.nav-dropdown {
+	display: none;
+	margin: 0;
+	position: absolute;
+	left: 0;
+}
+
+.nav-dropdown li {
+	margin: 0;
+	list-style: none;
+}
+
+.nav-dropdown a {
+	width: 120px;
+}
+
+.menu ul {
+	padding: 0;
+	margin: 0;
+	/*ul和ol、li都有list-style-type属性，*/
+	list-style-type: none;
+}
+
+.menu ul li {
+	/*float属性定义元素在哪个方向浮动，浮动元素会生成一个块级框。如果浮动非替换元素，则要
+    指明一个明确的宽度，否则会被尽可能的压缩。*/
+	position: relative;
+	list-style-type: none;
+}
+
+.menu ul li a,
+.menu ul li a:visited {
+	/*display的值，none表示不被显示；block表示显示为块级元素，元素前后
+        有换行符；inline为默认值，内联元素，前后没有换行符……*/
+	display: block;
+	text-decoration: none;
+	width: 120px;
+	height: 45px;
+	line-height: 45px;
+}
+
+
+/*鼠标无动作时不显示*/
+
+.menu ul li ul {
+	display: none;
+}
+
+
+/*当鼠标指向第一级li时，第二级ul的动作*/
+
+.menu ul li:hover ul {
+	display: block;
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 120px;
+}
+
+.menu ul li:hover ul li a {
+	display: block;
+	background: #31363d;
+	color: gray;
+}
+
+.menu ul li:hover ul li a:hover {
+	color: white;
+}
+
+
+/*clear属性定义了元素的哪边上不允许出现浮动元素。*/
+
+.clear {
+	clear: both;
+}
+
+.sec-nav a {
+	float: left;
+	margin-right: 4px;
+}
+
+.nav-icon {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 11px 11px 0 15px;
+	vertical-align: -7px;
+}
+
+.nav-home {
+	background-image: url(../img/个人.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.nav-mess {
+	background-image: url(../img/06-未关注人信息_私信_消息中心.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.nav-set {
+	background-image: url(../img/设置.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.nav-out {
+	background-image: url(../img/退出.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.index-question {
+	float: right;
+	width: 66px;
+	height: 32px;
+	line-height: 30px;
+	margin-top: 7px;
+	border: 1px solid #00B091;
+	border-radius: 4px;
+	background: #00BC9B;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05), inset 0 1px 1px rgba(255, 255, 255, .15);
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .12);
+	outline: 0;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>纯DIV+CSS制作二级横向弹出菜单</title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+    .menu ul{
+        padding:0;
+        margin:0;
+        /*ul和ol、li都有list-style-type属性，*/
+        list-style-type:none;
+    }
+    .menu ul li{
+    /*float属性定义元素在哪个方向浮动，浮动元素会生成一个块级框。如果浮动非替换元素，则要
+    指明一个明确的宽度，否则会被尽可能的压缩。*/
+        float:left;
+        position:relative;
+        list-style-type:none;
+    }
+    .menu ul li a, .menu ul li a:visited{
+        /*display的值，none表示不被显示；block表示显示为块级元素，元素前后
+        有换行符；inline为默认值，内联元素，前后没有换行符……*/
+        display:block;
+        text-decoration:none;
+        width:120px;
+        height:40px;
+        color:#000;
+        border-width:1px solid #fff;
+        background:#c9c9a7;
+        line-height:40px;
+        font-size:11px;
+    }
+    /*鼠标无动作时不显示*/
+    .menu ul li ul{
+        display:none;
+    }
+    /*当鼠标指向第一级li时，第二级ul的动作*/
+    .menu ul li:hover ul{
+        display:block;
+        position:absolute;
+        top:40px;
+        left:0;
+        width:105px;
+    }
+    .menu ul li:hover ul li a{
+        display:block;
+        background:#31363d;
+        color:#000;
+    }
+    .menu ul li:hover ul li a:hover{
+        color:white;
+        
+    }
+    /*clear属性定义了元素的哪边上不允许出现浮动元素。*/
+    .clear{
+        clear:both;
+    }
+</style>
+
+</head>
+<body>
+<div class="menu">
+    <ul>
+        <li><a class="hide" href="#">一级菜单</a>
+            <ul>
+                <li><a href="#">我的主页</a></li>
+                <li><a href="#">私信</a></li>
+                <li><a href="#">设置</a></li>
+                <li><a href="#">退出</a></li>
+            </ul>
+        </li>
+        <div class="clear"></div>
+    </ul>
+    
+</div>
+
+</body>
+</html>
