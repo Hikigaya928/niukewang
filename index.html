@@ -5,17 +5,15 @@
 		<meta charset="utf-8" />
 		<title>首页 - 牛客</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/BS.css" />
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
 		<div class="index-header">
 			<div class="index-wrap">
 				<a href="" class="index-logo"></a>
-				<!--<div class="index-search">
-					<form action="" method="get">
-						<input type="text" class="search-box" name="" id="" placeholder="搜索你感兴趣的内容..." />
-					</form>
-				</div>-->
 				<div class="index-search">
 					<form action="" method="get" class="search-form">
 						<input type="text" class="search-box" name="" id="" placeholder="搜索你感兴趣的内容..." />
@@ -33,7 +31,7 @@
 							<a href="" class="nav-link">发现</a>
 						</li>
 						<li class="nav-li">
-							<a href="" class="nav-link">消息</a>
+							<a href="" class="nav-link" data-toggle="modal" data-target="#message">消息</a>
 						</li>
 					</ul>
 				</div>
@@ -47,7 +45,7 @@
 							<ul class="nav-dropdown">
 								<li class="sec-nav">
 									<a href=""><i class="nav-home nav-icon"></i>我的主页</a>
-								</li >
+								</li>
 								<li class="sec-nav">
 									<a href=""><i class="nav-mess nav-icon"></i>私信</a>
 								</li>
@@ -61,7 +59,58 @@
 						</li>
 					</ul>
 				</div>
-				<button class="index-question">提问</button>
+				<button type="button" class="index-question" data-toggle="modal" data-target="#exampleModal">提问</button>
+			</div>
+		</div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h5 class="modal-title" id="exampleModalLabel">提问</h5>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">标题:</label>
+								<input type="text" class="form-control" id="recipient-name">
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="control-label">问题说明(可选):</label>
+								<textarea class="form-control" id="message-text" style="height: 100px;"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary" style="background-color: #00BC9B;">发布</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="message" tabindex="-1" role="dialog" aria-labelledby="messageLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h5 class="modal-title" id="exampleModalLabel">消息</h5>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="recipient-name" class="control-label">接收人:</label>
+								<input type="text" class="form-control" id="recipient-name">
+							</div>
+							<div class="form-group">
+								<label for="message-text" class="control-label">内容:</label>
+								<textarea class="form-control" id="message-text" style="height: 100px;"></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" style="background-color: #00BC9B;">发送</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="index-content">
@@ -70,36 +119,8 @@
 		<div class="index-footer">
 
 		</div>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script>
-	$(function() {
-		$("body").width($(window).width());
-		$("body").height($(window).height());
-//		$(".nav-dropdown li").mouseenter(function(){
-//			$(".user-info").css(
-//				"background-color","#31363d"
-//			)
-//		});
-//		$(".nav-dropdown li").mouseout(function(){
-//			$(".user-info").css(
-//				"background-color","#3d444c"
-//			)
-//		})
-//		$(".user-info").mouseenter(function(){
-//			$(".user-info").css(
-//				"background-color","#31363d"
-//			)
-//		})
-//		$(".user-info").mouseout(function(){
-//			$(".user-info").css(
-//				"background-color","#3d444c"
-//			)
-//		})
-	});
-</script>
-<script type="text/javascript">
-	
-</script>
