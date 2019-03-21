@@ -494,6 +494,11 @@ a.toggle-expand,
 	-webkit-tap-highlight-color: rgba(225, 225, 225, .5);
 	position: relative;
 	cursor: pointer;
+	text-overflow: ellipsis;
+	width:100%; 
+	overflow:hidden; 
+	white-space: nowrap;
+	
 }
 
 .meta {
