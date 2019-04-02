@@ -1,12 +1,12 @@
 .modal-header {
-	background-color: #00BC9B;
+	background-color: #0084ff;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	height: 40px;
 }
 
 .btn-primary {
-	background-color: #00BC9B;
+	background: #0084ff;
 }
 
 .modal-dialog {
