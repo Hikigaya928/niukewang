@@ -38,10 +38,9 @@ a {
 
 .follow-page {
 	background-color: white;
-	box-shadow: 0 1px 3px rgba(26,26,26,.1);
+	box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
 	margin-top: 40px;
 	border: 1px solid #ddd;
-	border-radius: 4px;
 }
 
 .follow-header {
@@ -208,4 +207,27 @@ span {
 
 #copy {
 	float: left;
+}
+
+.button-more {
+	width: 100%;
+	display: block;
+	font-size: 13px;
+	margin: 20px 0;
+	padding: 5px 1px;
+	text-align: center;
+	line-height: 1.7;
+	text-decoration: none!important;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 3px;
+	white-space: nowrap;
+	box-sizing: border-box;
+	background: dodgerblue;
+	color: white;
+}
+
+.button-more:hover {
+	background: #0084ff;
 }
