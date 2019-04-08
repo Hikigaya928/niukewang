@@ -34,6 +34,7 @@ h5 {
 	top: 0;
 	left: 0;
 	box-shadow: 0 1px 3px rgba(26, 26, 26, .1);
+	z-index: 9999;
 }
 
 .index-wrap {
@@ -43,10 +44,10 @@ h5 {
 }
 
 .index-logo {
-	width: 35px;
-	height: 45px;
+	width: 113px;
+	height: 36px;
 	float: left;
-	background-image: url(../images/书1.png);
+	background-image: url(../images/er.png);
 	background-repeat: no-repeat;
 	margin-top: 5px;
 }
@@ -153,7 +154,6 @@ h5 {
 	position: relative;
 	min-width: 120px;
 	margin-left: 15px;
-	z-index: 10;
 }
 
 .user-info {

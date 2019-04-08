@@ -14,7 +14,6 @@ li {
 .relpy-content {
 	min-height: 745px;
 	position: relative;
-	z-index: 2;
 	width: 960px;
 	margin: 0 auto;
 	clear: both;
@@ -42,7 +41,6 @@ li {
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 1;
 }
 
 .letter-info {
@@ -56,7 +54,6 @@ li {
 	position: absolute;
 	right: 10px;
 	top: 20px;
-	z-index: 2;
 	white-space: nowrap;
 	font-size: 12px;
 }
@@ -67,13 +64,11 @@ li {
 	right: 10px;
 	bottom: 20px;
 	font-size: 12px;
-	z-index: 2;
 }
 
 .reply-box {
 	position: relative;
 	float: left;
-	z-index: 2;
 }
 
 .info-count {
@@ -87,7 +82,6 @@ li {
 	outline: medium none;
 	padding: 0 4px;
 	text-align: center;
-	z-index: 10;
 }
 
 .user-avatar {
@@ -111,7 +105,6 @@ li {
 	position: absolute;
 	left: 80px;
 	top: 20px;
-	z-index: 2;
 	color: #CCC;
 	display: inline-block;
 }
@@ -119,7 +112,6 @@ li {
 	position: absolute;
     left: 80px;
     top: 50px;
-    z-index: 2;
     color: #666;
     float: left;
     font-size: 14px;
